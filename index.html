@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>back to the future</title>
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 0px;
+            display: flex;
+            padding-left: 500px;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .navigation a {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            margin-left: 45px;
+            padding: 6px 15px;
+            transition: .5s;
+        }
+
+        .navigation a:hover {
+            color: #333;
+        }
+
+        .navigation a span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .navigation a:hover span {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .parallax {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(lamb.jpg) no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            /* Add the following lines for parallax effect */
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        #text {
+            margin-top: -160px;
+            position: absolute;
+            font-size: 3em;
+            color: black;
+            margin-left: 510px;
+            transition: transform 0.5s ease;
+        }
+
+        .parallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+        }
+
+        .parallax img#left-tree {
+            /* height: 600px; */
+            width: 220px;
+            margin-top: 240px;
+            margin-left: 460px;
+            transform-origin: right center;
+            /* Set rotation point to bottom center */
+        }
+
+        .parallax img#right-tree {
+            /* height: 300px; */
+            width: 220px;
+            margin-top: 240px;
+            margin-left: 885px;
+            transform-origin: left center;
+            /* Set rotation point to bottom center */
+        }
+
+
+        .sec {
+            padding-top: 50px;
+            position: relative;
+            background: black;
+            height: 170vh;
+        }
+
+        .sec h5 {
+            color: white;
+            text-align: justify;
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        .cyber {
+            padding-top: 30px;
+            padding-left: 50px;
+            width: 1400px;
+            height: 650px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#">Home<span></span></a>
+            <a href="#">About<span></span></a>
+            <a href="#">Services<span></span></a>
+            <a href="#">Contact<span></span></a>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <img src="Untitled-2.png" id="left-tree">
+        <img src="Untitled-1.png" id="right-tree">
+    </section>
+
+    <section class="sec">
+
+        <h2 id="text">1985 DeLorean DMC-12</h2>
+
+        <h5>
+            "Back to the Future" is a beloved and iconic science fiction film trilogy directed by Robert Zemeckis and
+            produced by Steven Spielberg. The trilogy consists of three films: "Back to the Future" (1985), "Back to the
+            Future Part II" (1989), and "Back to the Future Part III" (1990). Created by screenwriters Robert Zemeckis
+            and Bob Gale, the series seamlessly blends elements of science fiction, comedy, and adventure, resulting in
+            a timeless and universally acclaimed cinematic experience.
+
+            The first film introduces us to Marty McFly, played by Michael J. Fox, a teenager who accidentally travels
+            back in time to 1955 in a DeLorean time machine created by the eccentric Dr. Emmett Brown, portrayed by
+            Christopher Lloyd. Marty must navigate the challenges of the past, ensuring that his parents meet and fall
+            in love while finding a way back to his own time. The film's ingenious plot, witty dialogue, and memorable
+            characters, including the eccentric Doc Brown and the iconic DeLorean car, quickly turned it into a cultural
+            phenomenon.
+
+            "Back to the Future Part II" takes Marty and Doc to the future, specifically 2015, and explores the
+            consequences of altering the past. The film delves into intricate timelines, parallel universes, and the
+            potential dangers of meddling with time. With dazzling special effects and an intricate narrative, the
+            second installment expands on the themes introduced in the first film, leaving audiences eagerly
+            anticipating the conclusion of the trilogy.
+
+            In "Back to the Future Part III," Marty travels to the Old West to rescue Doc Brown, who has become stranded
+            in 1885. The film cleverly weaves together elements of the Western genre with time travel, providing a
+            satisfying and adventurous conclusion to the trilogy. The enduring friendship between Marty and Doc, the
+            humor woven throughout the series, and the thrilling time-traveling escapades contribute to the trilogy's
+            enduring popularity.
+
+            The "Back to the Future" trilogy has left an indelible mark on popular culture, influencing subsequent
+            films, TV shows, and even theme park attractions. The iconic DeLorean time machine, the Flux Capacitor, and
+            phrases like "Great Scott!" have become synonymous with the franchise. Beyond its entertainment value, the
+            trilogy explores themes of friendship, destiny, and the consequences of our actions, making it a timeless
+            and resonant cinematic experience for audiences of all ages. Whether it's the exhilarating time-travel
+            sequences, the humor, or the heartwarming moments, "Back to the Future" continues to captivate new
+            generations, ensuring its place as a cinematic classic.
+        </h5>
+
+        <img src="459336-3840x2160-desktop-4k-delorean-wallpaper-photo.jpg" class="cyber">
+        <h1 style="color: #494848;font-size: 14em;margin-left:500px;margin-top: 40px;opacity: 20%;">DMC</h1>
+
+    </section>
+
+    <script>
+        let lefttree = document.getElementById('left-tree');
+        let righttree = document.getElementById('right-tree');
+        let parallaxSection = document.querySelector('.parallax');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+
+            lefttree.style.left = value * -0.2 + 'px';
+            lefttree.style.transform = 'rotate(' + (value * 0.2) + 'deg) translateY(' + value * -0.1 + 'px)';
+
+            // Mirror the movement for the right tree
+            righttree.style.left = value * 0.2 + 'px';
+            righttree.style.transform = 'rotate(' + (value * -0.2) + 'deg) translateY(' + value * -0.1 + 'px)';
+
+            // Apply parallax effect on the background image using CSS transform
+            parallaxSection.style.transform = 'translateY(' + value * -0.1 + 'px)';
+        });
+    </script>
+
+
+
+</body>
+
+</html>
